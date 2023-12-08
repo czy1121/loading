@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <GridLayout
+        android:id="@+id/icons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal">
+
+
+        <me.reezy.cosmo.loading.DoubleColorBallLoadingView
+            android:id="@+id/dcb1"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <me.reezy.cosmo.loading.DoubleColorBallLoadingView
+            android:id="@+id/dcb2"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_dots_scale"
+            app:tint="@android:color/holo_orange_dark" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_dots_scale_middle"
+            app:tint="@android:color/holo_green_dark" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_dots_bounce"
+            app:tint="@android:color/holo_red_light" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_dots_fade"
+            app:tint="@android:color/holo_red_dark" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_dots_move"
+            app:tint="@android:color/holo_purple" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_dots_rotate"
+            app:tint="@android:color/holo_blue_dark" />
+
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/spinner_bars"
+            app:tint="@android:color/holo_green_light" />
+
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/spinner_dots"
+            app:tint="@android:color/holo_blue_bright" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/spinner_ios"
+            app:tint="@android:color/holo_orange_light" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/spinner_oval"
+            app:tint="#fe718d" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_loading"
+            app:tint="@android:color/holo_orange_light" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_loading_270"
+            app:tint="@android:color/holo_orange_dark" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_reload"
+            app:tint="@android:color/holo_blue_bright" />
+
+        <me.reezy.cosmo.loading.SimpleLoadingView
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/animated_sync"
+            app:tint="@android:color/holo_blue_bright" />
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:name="c0"
+                android:fillAlpha="0"
+                android:fillColor="#000000"
+                android:pathData="M1 12A3 3 0 0 0 7 12A3 3 0 0 0 1 12Z" />
+            <path
+                android:name="c1"
+                android:fillAlpha=".6"
+                android:fillColor="#000000"
+                android:pathData="M9 12A3 3 0 0 0 15 12A3 3 0 0 0 9 12" />
+            <path
+                android:name="c2"
+                android:fillAlpha=".7"
+                android:fillColor="#000000"
+                android:pathData="M17 12A3 3 0 0 0 23 12A3 3 0 0 0 17 12" />
+        </vector>
+    </aapt:attr>
+
+    <target android:name="c0">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1000" android:repeatCount="infinite">
+                <propertyValuesHolder android:propertyName="fillAlpha">
+                    <keyframe android:fraction="0.0" android:value="0.3" />
+                    <keyframe android:fraction="0.4" android:value="1"  />
+                    <keyframe android:fraction="0.8" android:value="0.3" />
+                    <keyframe android:fraction="1" android:value="0.3" />
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+    <target android:name="c1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1000" android:startOffset="150" android:repeatCount="infinite">
+                <propertyValuesHolder android:propertyName="fillAlpha">
+                    <keyframe android:fraction="0.0" android:value="0.3" />
+                    <keyframe android:fraction="0.4" android:value="1"  />
+                    <keyframe android:fraction="0.8" android:value="0.3" />
+                    <keyframe android:fraction="1" android:value="0.3" />
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+
+    <target android:name="c2">
+        <aapt:attr name="android:animation">
+
+            <objectAnimator android:duration="1000" android:startOffset="300" android:repeatCount="infinite">
+                <propertyValuesHolder android:propertyName="fillAlpha">
+                    <keyframe android:fraction="0.0" android:value="0.3" />
+                    <keyframe android:fraction="0.4" android:value="1"  />
+                    <keyframe android:fraction="0.8" android:value="0.3" />
+                    <keyframe android:fraction="1" android:value="0.3" />
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+</animated-vector>

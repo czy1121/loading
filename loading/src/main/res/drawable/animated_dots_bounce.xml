@@ -1,0 +1,67 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+
+            <group android:name="c0">
+                <path
+                    android:fillColor="#000000"
+                    android:pathData="M1 12A3 3 0 0 0 7 12A3 3 0 0 0 1 12Z" />
+            </group>
+
+            <group android:name="c1">
+                <path
+                    android:fillColor="#000000"
+                    android:pathData="M9 12A3 3 0 0 0 15 12A3 3 0 0 0 9 12" />
+            </group>
+
+            <group android:name="c2">
+                <path
+                    android:fillColor="#000000"
+                    android:pathData="M17 12A3 3 0 0 0 23 12A3 3 0 0 0 17 12" />
+            </group>
+        </vector>
+    </aapt:attr>
+
+    <target android:name="c0">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1000" android:repeatCount="infinite" android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+                <propertyValuesHolder android:propertyName="translateY" >
+                    <keyframe android:fraction="0.35" android:value="-6"  />
+                    <keyframe android:fraction="0.70" android:value="0" />
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+    <target android:name="c1">
+        <aapt:attr name="android:animation">
+
+            <objectAnimator android:duration="1000" android:repeatCount="infinite" android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+                <propertyValuesHolder android:propertyName="translateY">
+                    <keyframe android:fraction="0.10" android:value="0" />
+                    <keyframe android:fraction="0.45" android:value="-6"  />
+                    <keyframe android:fraction="0.80" android:value="0" />
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+
+    <target android:name="c2">
+        <aapt:attr name="android:animation">
+
+            <objectAnimator android:duration="1000" android:repeatCount="infinite" android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+                <propertyValuesHolder android:propertyName="translateY">
+                    <keyframe android:fraction="0.20" android:value="0" />
+                    <keyframe android:fraction="0.55" android:value="-6"  />
+                    <keyframe android:fraction="0.90" android:value="0" />
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+</animated-vector>
