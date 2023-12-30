@@ -1,0 +1,46 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+
+            <path
+                android:name="a"
+                android:pathData="M12,12m-9.5,0a9.5,9.5 0,1 1,19 0a9.5,9.5 0,1 1,-19 0"
+                android:strokeWidth="2"
+                android:fillColor="#00000000"
+                android:strokeColor="#000"
+                android:strokeLineCap="round"/>
+        </vector>
+    </aapt:attr>
+
+    <target android:name="a">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="1800"
+                android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+                android:repeatCount="infinite">
+                <propertyValuesHolder android:propertyName="trimPathOffset">
+                    <keyframe android:fraction="0.0" android:value="0.25" />
+                    <keyframe android:fraction="1" android:value="1.5" />
+                </propertyValuesHolder>
+                <propertyValuesHolder android:propertyName="trimPathStart">
+                    <keyframe android:fraction="0.0" android:value="0" />
+                    <keyframe android:fraction="0.475" android:value="0" />
+                    <keyframe android:fraction="0.95" android:value="0.75" />
+                    <keyframe android:fraction="1" android:value="0.75" />
+                </propertyValuesHolder>
+                <propertyValuesHolder android:propertyName="trimPathEnd">
+                    <keyframe android:fraction="0.0" android:value="0.125" />
+                    <keyframe android:fraction="0.475" android:value="0.875" />
+                    <keyframe android:fraction="0.95" android:value="0.875" />
+                    <keyframe android:fraction="1" android:value="0.875" />
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

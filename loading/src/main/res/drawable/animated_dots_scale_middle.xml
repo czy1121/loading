@@ -41,9 +41,7 @@
             <objectAnimator
                 android:duration="375"
                 android:repeatCount="infinite"
-                android:repeatMode="reverse"
-                android:propertyXName="scaleX"
-                android:propertyYName="scaleY">
+                android:repeatMode="reverse">
                 <propertyValuesHolder
                     android:propertyName="scaleX"
                     android:valueFrom="1"

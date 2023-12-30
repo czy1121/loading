@@ -7,8 +7,9 @@ import android.view.animation.Animation
 import android.view.animation.Interpolator
 import android.view.animation.RotateAnimation
 import android.widget.ImageView
+import androidx.appcompat.widget.AppCompatImageView
 
-class SimpleLoadingView @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0) : ImageView(context, attributeSet, defStyleAttr) {
+class SimpleLoadingView @JvmOverloads constructor(context: Context, attributeSet: AttributeSet? = null, defStyleAttr: Int = 0) : AppCompatImageView(context, attributeSet, defStyleAttr) {
 
 
     fun start() {

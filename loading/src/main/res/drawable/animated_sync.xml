@@ -21,7 +21,7 @@
     <target android:name="a">
         <aapt:attr name="android:animation">
             <objectAnimator
-                android:duration="600"
+                android:duration="800"
                 android:interpolator="@android:anim/linear_interpolator"
                 android:propertyName="rotation"
                 android:repeatCount="infinite"
